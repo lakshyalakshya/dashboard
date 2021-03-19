@@ -1,0 +1,450 @@
+body {
+  margin-top: 50px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #39464e;
+}
+
+.navbar-default {
+  background-color: #FFF;
+  margin-left: 250px;
+}
+
+/*main side bar*/
+.msb {
+  width: 250px;
+  background-color: #F5F7F9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 100%;
+  z-index: 1;
+  border-right: 1px solid #ddd;
+  
+}
+.msb .navbar {
+  border: none;
+  margin-left: 0;
+  background-color: inherit;
+}
+.msb .navbar-header {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.msb .navbar-nav .panel {
+  border: 0 none;
+  box-shadow: none;
+  margin: 0;
+  background: inherit;
+}
+.msb .navbar-nav li {
+  display: block;
+  width: 100%;
+}
+.msb .navbar-nav li a {
+  padding: 15px;
+  color:black;
+}
+.msb .navbar-nav li a .glyphicon, .msb .navbar-nav li a .fa {
+  margin-right: 8px;
+}
+.msb .nb {
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+ul.nv,
+ul.ns {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.nv {
+  /*ns: nav-sub*/
+}
+.nv li {
+  display: block;
+  position: relative;
+}
+.nv li::before {
+  clear: both;
+  content: "";
+  display: table;
+  color: orange;
+}
+.nv li a {
+  color:orange;
+  padding: 10px 25px;
+  display: block;
+  vertical-align: middle;
+}
+.nv li a .ic {
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: 300;
+  display: inline-block;
+}
+.nv .ns li a {
+  padding: 10px 50px;
+}
+
+/*main content wrapper*/
+.mcw {
+  margin-left: 250px;
+  position: relative;
+  min-height: 100%;
+  background-color: rgb(236, 235, 235);
+  padding-left: 20px;
+  padding-right: 10px;
+  /*content view*/
+}
+
+/*globals*/
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+
+
+.msb, .mnb {
+  -moz-animation: slidein 300ms forwards;
+  -o-animation: slidein 300ms forwards;
+  -webkit-animation: slidein 300ms forwards;
+  animation: slidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.mcw {
+  -moz-animation: bodyslidein 300ms forwards;
+  -o-animation: bodyslidein 300ms forwards;
+  -webkit-animation: bodyslidein 300ms forwards;
+  animation: bodyslidein 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+body.msb-x .mcw, body.msb-x .mnb {
+  margin-left: 0;
+  -moz-animation: bodyslideout 300ms forwards;
+  -o-animation: bodyslideout 300ms forwards;
+  -webkit-animation: bodyslideout 300ms forwards;
+  animation: bodyslideout 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+body.msb-x .msb {
+  -moz-animation: slideout 300ms forwards;
+  -o-animation: slideout 300ms forwards;
+  -webkit-animation: slideout 300ms forwards;
+  animation: slideout 300ms forwards;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* Slide in animation */
+@-moz-keyframes slidein {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -250px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -250px;
+  }
+}
+@keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -250px;
+  }
+}
+@-moz-keyframes bodyslidein {
+  0% {
+    left: 0;
+  }
+  100% {
+    margin-left: 250px;
+  }
+}
+@-webkit-keyframes bodyslidein {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes bodyslidein {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 250px;
+  }
+}
+@-moz-keyframes bodyslideout {
+  0% {
+    margin-left: 250px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@-webkit-keyframes bodyslideout {
+  0% {
+    margin-left: 250px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes bodyslideout {
+  0% {
+    margin-left: 250px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+.yo{
+  height: 10vh;
+  
+}
+.searchgo{
+  border-radius: 55px;
+}
+.row1h{
+  margin-left: 40px;
+  margin-top: 60px;
+  font-weight: bolder;
+}
+.yoo{
+  background-color: orange;
+  height: 18vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.go{
+  clip-path: polygon(100% 0, 0 0, 0 68%, 12% 81%, 28% 71%, 47% 93%, 61% 70%, 68% 86%, 86% 85%, 100% 68%);
+  background-color: peachpuff;
+  height: 18vh;
+  padding-top: 2vh;
+  padding-right: 1vh;
+  padding-left: 1vh;
+}
+.ho{
+  height: 3.1vh;
+  background-color: black;
+  float: right;
+}
+.hoo{
+  float: left;
+}
+.hy{
+  margin-top: 22px;
+  float: left;
+}
+
+.fbutton{
+  background-color: orange;
+  color: white;
+  float: right;
+  width: 110px;
+  height: 45px;
+  margin-top: 3vh;
+  margin-right: 30px;
+}
+.f2button{
+  background-color:white;
+  color:black;
+  float: right;
+  width: 110px;
+  height: 45px;
+}
+.fl{
+  float: left;
+  padding-top: 5vh;
+  padding-left: 30px;
+}
+.card2bar{
+  width: 100%;
+  height: 15px;
+  background-color:rgb(235, 233, 233);
+  border-radius: 10px;
+}
+.card2bari{
+  width: 25%;
+  height: 15px;
+  background-color:orange;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
+  
+}
+.cardss{
+  margin-bottom: 12px;
+}
+.test{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardh{
+  height: 10vh;
+}
+.row2space{
+  margin-top: 30px;
+  margin-left:;
+}
+.row1space{
+  margin-top: 30px;
+  margin-left: 4px;
+}
+.bodypx{
+  padding-right: 2rem;
+  padding-left:2rem ;
+}
+.bodypy{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.fll{
+  float: left;
+  padding-top: 3vh;
+  padding-left: 30px;
+}
+.cardimg{
+  border-radius: 10px;
+  background-color: white;
+  float: left;
+  margin-left: 3rem;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img1{
+float: left;
+font-weight: bolder;
+color: black;
+padding-left:10px ;
+
+}
+.img2{
+  float: right;
+  font-weight:;
+  color:orange;
+  padding-right:10px ;
+  }
+.imgt{
+  margin-top: 15px;
+}  
+.trspace{
+  font-size: 1.7rem;
+}
+.cardh2{
+  height: 6vh;
+}
+.fbutton2{
+  background-color: orange;
+  color: white;
+  float: left;
+  width: 70px;
+  height: 50px;
+  margin-top: vh;
+  margin-left: 21px;
+  border-radius: 0px;
+}
+.test2{
+  background-color: white;
+  margin-top: 3vh;
+}
+.hey{
+  border: 1px solid black;
+  margin-top: 1rem;
+  height: 22.6vh;
+  border-left: 0px;
+  border-bottom: 0px;
+}
+.hey2{
+  border: 1px solid black;
+  margin-top: 1rem;
+  height: 22.6vh;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+#chartdiv {
+  width: 100%;
+  height: 400px;
+}
+.lo{
+  float: left;
+  margin-left: 2rem;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+
+}
+.yyy{
+  clip-path: polygon(0 0, 100% 0, 96% 16%, 96% 100%, 0 100%);
+
+  background-color:orange;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+ border-bottom-right-radius: 10px;
+ padding-top: 2vh;
+ padding-bottom: 1vh;
+ padding-left: 2vh;
+ color: white;
+
+
+}
+.last{
+  width: 100%;
+  height: 9vh;
+  border-radius:50px;
+}
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

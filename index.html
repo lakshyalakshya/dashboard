@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  
+  
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="mnb navbar navbar-default navbar-fixed-top yo">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="ic fa fa-bars "></i>
+      </button>
+      <div style="padding: 20px 0px;">
+         <a href="#" id="msbo"><i class="ic fa fa-bars"></i></a>
+      </div>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="	fa fa-calendar"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fa fa-bell-o"></i></a></li>
+        <li><a href="#">	<img src="use.jpg" alt="logo" height="35px" width="35px" style="border-radius: 50px;" ></a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control searchgo" placeholder="Search here..." style="height: 40px; width: 230px;">
+      </form>
+    </div>
+  </div>
+</nav>
+<!--msb: main sidebar-->
+<div class="msb" id="msb">
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header yo">
+				<div class="brand-wrapper">
+					<!-- Brand -->
+					<div class="brand-name-wrapper">
+						<a class="navbar-brand" href="#">
+							<img src="logo.jpeg" alt="logo" height="54px" width="180px" style="padding-bottom: 11px; padding-left: 25px;" >
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Main Menu -->
+			<div class="side-menu-container">
+				<ul class="nav navbar-nav">
+
+					<li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					
+          <li class="panel panel-default" id="dropdown">
+						<a data-toggle="collapse" href="#dropdown-lvl1">
+							<i class="fa fa-diamond"></i> Apps
+						  <span class="caret"></span>
+            </a>
+						<!-- Dropdown level 1 -->
+						<div id="dropdown-lvl1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="nav navbar-nav">
+									<li><a href="#">Mail</a></li>
+									<li><a href="#">Calendar</a></li>
+									<li><a href="#">Ecommerce</a></li>
+									<li><a href="#">User</a></li>
+									<li><a href="#">Social</a></li>
+
+									<!-- Dropdown level 2 -->
+									<li class="panel panel-default" id="dropdown">
+										<a data-toggle="collapse" href="#dropdown-lvl2">
+											<i class="glyphicon glyphicon-off"></i> Sub Level <span class="caret"></span>
+										</a>
+										<div id="dropdown-lvl2" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul class="nav navbar-nav">
+													<li><a href="#">Link</a></li>
+													<li><a href="#">Link</a></li>
+													<li><a href="#">Link</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+          </li>
+          <li class="active"><a href="#"><i class="fa fa-puzzle-piece"></i> Components</a></li>
+					<li><a href="#"><i class="fa fa-heart"></i> Extras</a></li>
+					<!-- Dropdown-->
+					<li class="panel panel-default" id="dropdown">
+						<a data-toggle="collapse" href="#dropdown-lvl1">
+							<i class="fa fa-diamond"></i> Apps
+						  <span class="caret"></span>
+            </a>
+						<!-- Dropdown level 1 -->
+						<div id="dropdown-lvl1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="nav navbar-nav">
+									<li><a href="#">Mail</a></li>
+									<li><a href="#">Calendar</a></li>
+									<li><a href="#">Ecommerce</a></li>
+									<li><a href="#">User</a></li>
+									<li><a href="#">Social</a></li>
+
+									<!-- Dropdown level 2 -->
+									<li class="panel panel-default" id="dropdown">
+										<a data-toggle="collapse" href="#dropdown-lvl2">
+											<i class="glyphicon glyphicon-off"></i> Sub Level <span class="caret"></span>
+										</a>
+										<div id="dropdown-lvl2" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul class="nav navbar-nav">
+													<li><a href="#">Link</a></li>
+													<li><a href="#">Link</a></li>
+													<li><a href="#">Link</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+          </li>
+          <li class=""><a href="#"><i class="fa fa-puzzle-piece"></i> Components</a></li>
+          <li><a href="#"><i class="fa fa-heart"></i> Extras</a></li>
+          <li class=""><a href="#"><i class="fa fa-puzzle-piece"></i> Components</a></li>
+          <li><a href="#"><i class="fa fa-heart"></i> Extras</a></li>
+          <li class=""><a href="#"><i class="fa fa-puzzle-piece"></i> Components</a></li>
+          <li><a href="#"><i class="fa fa-heart"></i> Extras</a></li>
+          <li class=""><a href="#"><i class="fa fa-puzzle-piece"></i> Components</a></li>
+					<li><a href="#"><i class="fa fa-heart"></i> Extras</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>  
+</div>
+<!--main content wrapper-->
+<div class="mcw">
+  <!--navigation here-->
+  <!--main content view-->
+  <div class="cv">
+    <div>
+     <div class="inbox">
+       <div class="inbox-sb">
+         
+       </div>
+       <div class="inbox-bx container-fluid">
+         <div class="row py-5 mt-5">
+        
+           <h1 class="row1h">Welcome, Anny</h1>
+             
+           </div>
+           <div class="row">
+           <div class="row row1space">
+             <div class="col-md-3">
+              <div>
+                <div class="card yoo" style="width:95%;">
+                  <div class="card go" style="width:100%;">  
+                  <div class="card-body">
+                    <div>
+                  
+                    <p class="hoo"style=" color: black;">Sells Graph<br><span style="font-size: 25px; font-weight:bolder; color: black;">$8,451<span> </p>
+                    <span class="badge badge-pill badge-dark ho "><p style="font-size: 13px;"><i class="fa 		fa fa-arrow-up">&nbsp;&nbsp;</i>3.4%</p></span>
+                    
+                  </div>
+                   </div>
+                  
+                  </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+              <div >
+                <div class="card yoo" style="width:97%;">
+                  <div class="card go" style="width:100%;">  
+                  <div class="card-body">
+                    <div>
+                  
+                    <p class="hoo"style=" color: black;">Sells Graph<br><span style="font-size: 25px; font-weight:bolder; color: black;">$8,451<span> </p>
+                    <span class="badge badge-pill badge-dark ho "><p style="font-size: 13px;"><i class="fa 		fa fa-arrow-up">&nbsp;&nbsp;</i>3.4%</p></span>
+                    
+                  </div>
+                   </div>
+                  
+                  </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+              <div >
+                <div class="card yoo" style="width: 95%;">
+                  <div class="card go" style="width: 100%;">  
+                  <div class="card-body">
+                    <div>
+                  
+                    <p class="hoo"style=" color: black;">Sells Graph<br><span style="font-size: 25px; font-weight:bolder; color: black;">$8,451<span> </p>
+                    <span class="badge badge-pill badge-dark ho "><p style="font-size: 13px;"><i class="fa 		fa fa-arrow-up">&nbsp;&nbsp;</i>3.4%</p></span>
+                    
+                  </div>
+                   </div>
+                  
+                  </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+              <div >
+                <div class="card yoo" style="width: 95%;">
+                  <div class="card go" style="width: 100%;">  
+                  <div class="card-body">
+                    <div>
+                  
+                    <p class="hoo"style=" color: black;">Sells Graph<br><span style="font-size: 25px; font-weight:bolder; color: black;">$8,451<span> </p>
+                    <span class="badge badge-pill badge-dark ho "><p style="font-size: 13px;"><i class="fa 		fa fa-arrow-up">&nbsp;&nbsp;</i>3.4%</p></span>
+                    
+                  </div>
+                   </div>
+                  
+                  </div>
+                </div>
+                </div>
+             </div>
+           </div>
+           </div>
+           <!--part2-->
+            <div class="row row2space">
+              
+              <div class="col-md-6">
+                <div class="card test" style=" width:100%; height: 53vh;">
+                  <div class="cardh">
+                    <span class="fl" style="font-weight: bolder;color: black;">RECENT ORDERS REQUESTED</span>
+                    <button type="button" class="btn fbutton">View all</button>
+                    </div>
+                    <hr>
+                 <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Food Item</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Product ID</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="ms-table-f-w"> <img src="pizza.jpg" height="35px" width="35px" > Pizza </td>
+                            <td>$19.99</td>
+                            <td>67384917</td>
+                          </tr>
+                          <tr>
+                            <td class="ms-table-f-w"> <img src="pizza.jpg" height="35px" width="35px" > Pizza </td>
+                            <td>$19.99</td>
+                            <td>67384917</td>
+                          </tr>
+                          <tr>
+                            <td class="ms-table-f-w"> <img src="pizza.jpg" height="35px" width="35px"> Pizza </td>
+                            <td>$19.99</td>
+                            <td>67384917</td>
+                          </tr>
+                          <tr>
+                            <td class="ms-table-f-w"> <img src="pizza.jpg" height="35px" width="35px"> Pizza </td>
+                            <td>$19.99</td>
+                            <td>67384917</td>
+                          </tr>
+              
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card test" style="width: 100%; height: 53vh;">
+                  <div class="cardh" style="background-color: white;">
+                    <span  class="fl" style="font-weight: bolder;color: black;">MONTHLY REVENUE</span>
+                    <button type="button" class="btn fbutton">January&nbsp; <i class="	fas fa-angle-down"></i></button>
+                  </div>
+                  <hr>
+                  <div class="card-body bodypx">
+                   <div class="cardss">
+                     <span style="font-weight:bold;">week1</span>
+                     <div class="card2bar bodypy">
+                       <div class="card2bari">
+                         25%
+                       </div>
+                     </div>
+                   </div>
+                   <div class="cardss">
+                    <span style="font-weight:bold;">week1</span>
+                    <div class="card2bar bodypy">
+                      <div class="card2bari">
+                        25%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardss">
+                    <span style="font-weight:bold;">week1</span>
+                    <div class="card2bar bodypy">
+                      <div class="card2bari">
+                        25%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardss">
+                    <span style="font-weight:bold;">week1</span>
+                    <div class="card2bar bodypy">
+                      <div class="card2bari">
+                        25%
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                   
+                    </div>
+                  
+                </div>
+
+                  
+                </div><!--2end-->
+<!--start3-->
+ <div class="row row2space">
+   <div class="col-md-12">
+    <div class="card test" style=" width:100%; min-height: 50vh;">
+      <div class="cardh" style="  height: 6vh;">
+        <span class="fll" style="font-weight: bolder;color: black;">TRENDING ORDERS</span>
+        
+        </div>
+        <hr>
+     <div class="card-body ">
+      <div class="card cardimg" style="width: 22%; min-height: 30vh;">
+        <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+        <div class="card-body">
+          
+          <p class="imgt"><span class="img1">Meat Stew <br><br>Orders 15</span><span class="img2">$25.00 <br><br>Income $175</span></p>
+        
+        </div>
+      </div>
+      <div class="card cardimg" style="width: 22%; min-height: 30vh;">
+        <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+        <div class="card-body">
+          
+          <p class="imgt"><span class="img1">Meat Stew <br><br>Orders 15</span><span class="img2">$25.00 <br><br>Income $175</span></p>
+        
+        </div>
+      </div>
+      <div class="card cardimg" style="width: 22%; min-height: 30vh;">
+        <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+        <div class="card-body">
+          
+          <p class="imgt"><span class="img1">Meat Stew <br><br>Orders 15</span><span class="img2">$25.00 <br><br>Income $175</span></p>
+        
+        </div>
+      </div>
+      <div class="card cardimg" style="width: 22%; min-height: 30vh;">
+        <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+        <div class="card-body">
+          
+          <p class="imgt"><span class="img1">Meat Stew <br><br>Orders 15</span><span class="img2">$25.00 <br><br>Income $175</span></p>
+        
+        </div>
+      </div>
+      </div>
+    </div>
+   
+
+   </div>
+
+
+ </div>
+
+<!--end3-->
+<!--start4-->
+<div class="row row2space">
+  <div class="col-md-7">
+    <div class="card test" style="width: 100%; height: 86vh;">
+      <div class="cardh2" style="background-color: white;">
+        <span  class="fll" style="font-weight: bolder;color: black;">ORDER TIMING CHART</span>
+        
+      </div>
+      <hr>
+      <div class="card-body bodypx">
+      <div class="row">
+         <div class="col-md-12">
+          <div class="lo">
+            <span>Total Orders</span><br><span style="font-size: 2.8rem;color: black; font-weight: bold;">703,49</span>
+          </div>
+          <div class="lo">
+            <span>Total Orders</span><br><span style="font-size: 2.8rem;color: black;font-weight: bold;">703,49</span>
+          </div>
+          <div class="lo">
+            <span>Total Orders</span><br><span style="font-size: 2.8rem;color: black;font-weight: bold;">703,49</span>
+          </div>
+          <div class="lo">
+            <span>Total Orders</span><br><span style="font-size: 2.8rem;color: black;font-weight: bold;">703,49</span>
+          </div>
+          
+          
+         </div>
+
+      </div>
+      
+        <div class="row">
+         
+      <div id="chartdiv"></div>
+      </div>
+       </div>
+    </div>
+  </div>    
+      
+    
+    <div class="col-md-5">
+      <div class="card test" style="width: 100%; height: 53vh;">
+        <div class="cardh2" style="background-color: white;">
+          <span  class="fll" style="font-weight: bolder;color: black;">FAVOURITE CHARTS</span>
+          
+        </div>
+        <hr>
+        <div class="cardh2" style="background-color: white;">
+          <button type="button" class="btn fbutton2">MON</button>
+          <button type="button" class="btn fbutton2">TUE</button>
+          <button type="button" class="btn fbutton2">WED</button>
+          <button type="button" class="btn fbutton2">THR</button>
+          <button type="button" class="btn fbutton2">FRI</button>
+        </div>
+        <hr>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead >
+                <tr >
+                  <th scope="col">Restaurant Name</th>
+                  <th scope="col">	Qty</th>
+                  <th scope="col">	OrdersProfit</th>
+                  <th scope="col">Profit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="trspace">
+                  <td class="ms-table-f-w"> Hunger House </td>
+                  <td  >8528</td>
+                  
+                  <td>+17.24%</td>
+                  <td>7.65%</td>
+                </tr>
+                <tr class="trspace">
+                  <td class="ms-table-f-w"> Hunger House </td>
+                  <td>8528</td>
+                  <td>+17.24%</td>
+                  <td>7.65%</td>
+                </tr>
+                <tr class="trspace">
+                  <td class="ms-table-f-w"> Hunger House </td>
+                  <td>8528</td>
+                  <td>+17.24%</td>
+                  <td>7.65%</td>
+                </tr>
+                <tr class="trspace">
+                  <td class="ms-table-f-w"> Hunger House </td>
+                  <td>8528</td>
+                  <td>+17.24%</td>
+                  <td>7.65%</td>
+                </tr>
+    
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    <div class="card test2 shadow" style="width: 100%; height: 30vh;">
+      <div class="cardh2" style="background-color: white;">
+        <span  class="fll" style="font-weight: bolder;color: black;">TOTAL EARNINGS</span>
+        
+      </div>
+      
+      <div class="card-body">
+        <div class="col-md-6 hey">
+          <div class="" style="text-align: center; margin-top: 3vh;">
+            <i class="fa fa-star" style="color: black;font-size: 4rem;"></i><br>
+            <span style="color: black;font-size: 3rem;">$8,033</span><br>
+            <span style="color: black;font-size: 2rem;">Today</span>
+
+
+          </div>
+        </div>
+        <div class="col-md-6 hey2">
+          <div>
+            <div class="" style="text-align: center; margin-top: 3vh;">
+              <i class="fa fa-star" style="color: black;font-size: 4rem;"></i><br>
+              <span style="color: black;font-size: 3rem;">$8,033</span><br>
+              <span style="color: black;font-size: 2rem;">Today</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+
+
+</div>
+</div>
+</div>
+
+
+<!--end4-->
+<!--start5-->
+  
+<div class="row row2space">
+  <div class="col-md-12">
+   <div class="card test" style=" width:100%; min-height: 50vh;">
+     <div class="cardh" style="  height: 6vh;">
+       <span class="fll" style="font-weight: bolder;color: black;">RECENTLY PLACED ORDERS</span>
+       
+       </div>
+       <hr>
+    <div class="card-body ">
+      <div class="table-responsive">
+        <table class="table table-hover thead-primary">
+          <thead class="" style="background-color: orange; font-size: 1.7rem; color: white;">
+            <tr>
+              <th scope="col">Order ID</th>
+              <th scope="col">Order Name</th>
+              <th scope="col">Customer Name</th>
+              <th scope="col">Location</th>
+              <th scope="col">Order Status</th>
+              <th scope="col">Delivered Time</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="font-size: 1.6rem;">
+              <th scope="row">1</th>
+              <td>French Fries</td>
+              <td>Jhon Leo</td>
+              <td>New Town</td>
+              <td><span class="badge badge-primary" style="background-color: orange;">Pending</span>
+              </td>
+              <td>10:05</td>
+              <td>$10</td>
+            </tr>
+            <tr style="font-size: 1.6rem;">
+              <th scope="row">2</th>
+              <td>Mango Pie</td>
+              <td>Kristien</td>
+              <td>Old Town</td>
+              <td><span class="badge badge-dark" style="background-color:black;">Cancelled</span>
+              </td>
+              <td>14:05</td>
+              <td>$9</td>
+            </tr>
+            <tr style="font-size: 1.6rem;">
+              <th scope="row">3</th>
+              <td>FrieD Egg Sandwich</td>
+              <td>Jack Suit</td>
+              <td>Oxford Street</td>
+              <td><span class="badge badge-success" style="background-color: green;">Delivered</span>
+              </td>
+              <td>12:05</td>
+              <td>$19</td>
+            </tr>
+            <tr style="font-size: 1.6rem;">
+              <th scope="row">4</th>
+              <td>Lemon Yogurt Parfait</td>
+              <td>Alesdro Guitto</td>
+              <td>Church hill</td>
+              <td><span class="badge badge-success" style="background-color: green;">Delivered</span>
+              </td>
+              <td>12:05</td>
+              <td>$18</td>
+            </tr>
+            <tr style="font-size: 1.6rem;">
+              <th scope="row">5</th>
+              <td>Spicy Grill Sandwich</td>
+              <td>Jacob Sahwny</td>
+              <td>palace Road</td>
+              <td><span class="badge badge-success" style="background-color: green;">Delivered</span>
+              </td>
+              <td>12:05</td>
+              <td>$21</td>
+            </tr>
+            <tr style="font-size: 1.6rem;">
+              <th scope="row">6</th>
+              <td>Chicken Sandwich</td>
+              <td>Peter Gill</td>
+              <td>Street 21</td>
+              <td><span class="badge badge-primary" style="background-color: orange;">Pending</span>
+              </td>
+              <td>12:05</td>
+              <td>$15</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      
+     </div>
+     </div>
+   </div>
+  
+
+  </div>
+
+
+
+
+
+<!--end5-->
+<!--start6-->
+
+<div class="row row2space">
+  <div class="col-md-12">
+   <div class="card test" style=" width:100%; min-height: 78vh;">
+     <div class="cardh" style="  height: 6vh;">
+       <span class="fll" style="font-weight: bolder;color: black;">NEW RESTURANT LISTINGS</span>
+       
+       </div>
+       <hr>
+    <div class="card-body ">
+      <div class="card cardimg shadow" style="width: 30%; min-height: 62vh;">
+           <div class="row">
+             <div class="col-md-8">
+              <div style="margin-top: 2.7vh; margin-left: 2rem;">
+                <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;" ></a>
+                <p style="color: black;font-weight:; margin-left: 2rem; float: left;">Hunger House <br><span style="font-size: 1.2rem;">30 seconds ago</span></p><br><br>
+                
+              </div> 
+             </div>
+             <div class="col-md-4">
+
+             </div>
+
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+              <div style="margin-left: 2rem; margin-top: 2vh;">
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+              </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+               <p style="padding-left: 2rem; padding-right: 2rem; margin-top: 2vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+             </div>
+           </div>
+        
+        
+        <div class="card-body" style="margin-top: 2.7vh;">
+          
+         
+          
+          <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+         
+        </div>
+         <div class="row">
+           <div class="col-md-6" style="text-align: center;margin-top: 2vh;">
+            <i class="fa fa-heart" style="color:red;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "> </i> &nbsp;<span>982</span>
+           </div>
+           <div class="col-md-6" style="text-align: center;margin-top: 2vh; border-left:2px solid black;">
+            <i class="fa fa-heart" style="color:red;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "> </i>&nbsp;<span>982</span>
+           </div>
+         </div>
+      </div>
+      
+     </div>
+     <div class="card-body ">
+      <div class="card cardimg" style="width: 30%; min-height: 62vh;">
+           <div class="row">
+             <div class="col-md-8">
+              <div style="margin-top: 2.7vh; margin-left: 2rem;">
+                <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;" ></a>
+                <p style="color: black;font-weight:; margin-left: 2rem; float: left;">Hunger House <br><span style="font-size: 1.2rem;">30 seconds ago</span></p><br><br>
+                
+              </div> 
+             </div>
+             <div class="col-md-4">
+
+             </div>
+
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+              <div style="margin-left: 2rem; margin-top: 2vh;">
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+              </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+               <p style="padding-left: 2rem; padding-right: 2rem; margin-top: 2vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+             </div>
+           </div>
+        
+        
+        <div class="card-body" style="margin-top: 2.7vh;">
+          
+         
+          
+          <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+         
+        </div>
+         <div class="row">
+           <div class="col-md-6" style="text-align: center;margin-top: 2vh;">
+            <i class="fa fa-heart" style="color:red;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "> </i> &nbsp;<span>982</span>
+           </div>
+           <div class="col-md-6" style="text-align: center;margin-top: 2vh; border-left:2px solid black;">
+            <i class="fa fa-heart" style="color:red;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "> </i>&nbsp;<span>982</span>
+           </div>
+         </div>
+      </div>
+      
+     </div>
+     <div class="card-body ">
+      <div class="card cardimg" style="width: 30%; min-height: 62vh;">
+           <div class="row">
+             <div class="col-md-8">
+              <div style="margin-top: 2.7vh; margin-left: 2rem;">
+                <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;" ></a>
+                <p style="color: black;font-weight:; margin-left: 2rem; float: left;">Hunger House <br><span style="font-size: 1.2rem;">30 seconds ago</span></p><br><br>
+                
+              </div> 
+             </div>
+             <div class="col-md-4">
+
+             </div>
+
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+              <div style="margin-left: 2rem; margin-top: 2vh;">
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+                <i class="fa fa-star" style="color:gold;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "></i>
+              </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+               <p style="padding-left: 2rem; padding-right: 2rem; margin-top: 2vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+             </div>
+           </div>
+        
+        
+        <div class="card-body" style="margin-top: 2.7vh;">
+          
+         
+          
+          <img class="card-img-top" src="food.jpg" alt="Card image cap" width="100%" >
+         
+        </div>
+         <div class="row">
+           <div class="col-md-6" style="text-align: center;margin-top: 2vh;">
+            <i class="fa fa-heart" style="color:red;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "> </i> &nbsp;<span>982</span>
+           </div>
+           <div class="col-md-6" style="text-align: center;margin-top: 2vh; border-left:2px solid black;">
+            <i class="fa fa-heart" style="color:red;font-size: 2rem;margin-left:1rem; font-size: 1.4rem; "> </i>&nbsp;<span>982</span>
+           </div>
+         </div>
+      </div>
+      
+     </div>
+
+     </div>
+   </div>
+  
+
+  </div>
+
+
+
+
+
+
+  
+<!--end6-->
+<!--start7-->
+
+
+<div class="row row2space">
+              
+  <div class="col-md-6">
+    <div class="card test" style=" width:100%; height: 86vh;">
+      <div class="cardh">
+        <span class="fl" style="font-weight: bolder;color: black;">RECENT SUPPORT TICKETS  </span>
+        <button type="button" class="btn fbutton">View all</button>
+        </div>
+        <hr>
+     <div class="card-body">
+         <div class="row">
+           <div class="col-md-2">
+            <a href="#">	<img src="use.jpg" alt="logo" height="35px" width="35px" style="border-radius: 50px; float: right;" ></a>
+           </div>
+           <div class="col-md-10">
+             <div class="row">
+                <div class="col-md-8">
+                  <span style="font-size: 1.5rem; color: black;font-weight: bold;">Lorem Ipsum is </span><br><span><i class="fa fa-calendar"></i>&nbsp;February 24,2020</span>
+                </div>
+                <div class="col-md-4">
+                  <span class="badge badge-success" style="margin-left: 7rem; background-color: green;">open</span>
+                </div>
+             </div>
+              <div class="row" style="margin-top: 2vh; padding-right: 1rem;">
+                <div class="col-md-12">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <i class="far fa-comment-alt" style="color: black;">&nbsp;16</i> &nbsp;<i class="fas fa-paper-plane" style="color: black;">&nbsp;3</i> 
+                </div>
+              </div>
+           </div>
+         </div>
+         <hr>
+         <div class="row">
+          <div class="col-md-2">
+           <a href="#">	<img src="use.jpg" alt="logo" height="35px" width="35px" style="border-radius: 50px; float: right;" ></a>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+               <div class="col-md-8">
+                 <span style="font-size: 1.5rem; color: black;font-weight: bold;">Lorem Ipsum is </span><br><span><i class="fa fa-calendar"></i>&nbsp;February 24,2020</span>
+               </div>
+               <div class="col-md-4">
+                 <span class="badge badge-success" style="margin-left: 7rem; background-color: green;">open</span>
+               </div>
+            </div>
+             <div class="row" style="margin-top: 2vh; padding-right: 1rem;">
+               <div class="col-md-12">
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+                 <i class="far fa-comment-alt" style="color: black;">&nbsp;16</i> &nbsp;<i class="fas fa-paper-plane" style="color: black;">&nbsp;3</i> 
+               </div>
+             </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-2">
+           <a href="#">	<img src="use.jpg" alt="logo" height="35px" width="35px" style="border-radius: 50px; float: right;" ></a>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+               <div class="col-md-8">
+                 <span style="font-size: 1.5rem; color: black;font-weight: bold;">Lorem Ipsum is </span><br><span><i class="fa fa-calendar"></i>&nbsp;February 24,2020</span>
+               </div>
+               <div class="col-md-4">
+                 <span class="badge badge-success" style="margin-left: 7rem; background-color: red;">closed</span>
+               </div>
+            </div>
+             <div class="row" style="margin-top: 2vh; padding-right: 1rem;">
+               <div class="col-md-12">
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+                 <i class="far fa-comment-alt" style="color: black;">&nbsp;16</i> &nbsp;<i class="fas fa-paper-plane" style="color: black;">&nbsp;3</i> 
+               </div>
+             </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card test" style="width: 100%; height: 86vh;">
+      <div class="cardh" style="background-color: white;">
+        <div class="row">
+          <div class="col-md-6">
+            <div style="padding-top: 3vh; margin-left: 2rem;">
+              <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;" ></a>
+              <p style="color: black;font-weight:; margin-left: 2rem; float: left;">Hunger House <br><span style="font-size: 1.2rem;">Active Now</span></p><br><br>
+              
+            </div> 
+          </div>
+          <div class="col-md-6" style="padding-top: 3vh; padding-left: 8rem;">
+            <div style="padding-top: 1.4vh; margin-left: 2rem; border-radius: 50px; height: 40px; width: 40px;background-color: rgb(231, 231, 231);float: left;">
+            <i class="	fa fa-video-camera" style="color:black;font-size: 2rem;margin-left:1rem; font-size: 1.8rem; "></i>
+            </div>
+            <div style="padding-top: 1.4vh; margin-left: 2rem; border-radius: 50px; height: 40px; width: 40px;background-color: rgb(231, 231, 231);float: left;">
+              <i class="fa fa-volume-control-phone" style="color:black;font-size: 2rem;margin-left:1.2rem; font-size: 1.8rem; "></i>
+              </div>
+              <div style="padding-top: 1.4vh; margin-left: 2rem; border-radius: 50px; height: 40px; width: 40px;background-color: rgb(231, 231, 231);float: left;">
+                <i class="	fa fa-user" style="color:black;font-size: 2rem;margin-left:1.3rem; font-size: 1.8rem; "></i>
+                </div>
+          </div>
+        </div>
+       
+      </div>
+      <hr>
+      <div class="card-body bodypx">
+       <div class="row">
+         <div class="col-md-2">
+          <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;margin-top: 20vh;" ></a>
+          
+         </div>
+         <div class="col-md-8">
+         <div class="yyy">
+          <p>Lorem Ipsum is simply dummy text of the<br> printing and typesetting industry.</p>
+          
+        </div>
+        <span style="color: black;float:right; padding-right: 2rem; padding-top: 1vh;">1:33 PM</span>
+        <div class="yyy" style="margin-top: 10vh;">
+          <p>Lorem Ipsum is simply dummy text of the<br> printing and typesetting industry.</p>
+          
+        </div>
+        <span style="color: black;float: left;; padding-right: 2rem; padding-top: 1vh;">1:33 PM</span>
+        <div class="yyy" style="margin-top: 10vh;">
+          <p>Lorem Ipsum is simply dummy text of the<br> printing and typesetting industry.</p>
+          
+        </div>
+        <span style="color: black;float: right; padding-right: 2rem; padding-top: 1vh;">1:33 PM</span>
+        
+       </div>
+         <div class="col-md-2">
+          <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;" ></a>
+          <a href="#">	<img src="use.jpg" alt="logo" height="50px" width="50px" style="border-radius: 50px; float: left;margin-top: 33vh;" ></a>
+         </div>
+      </div>
+      <div class="row" style="margin-top: 5vh;">
+        <div class="col-md-12">
+          <div>
+            <input class="form-control mr-sm-2 last" type="search" placeholder="Enter Message here" aria-label="Search">
+          </div>
+        </div>
+      </div>
+       </div>
+      
+      
+      </div>
+       
+        </div>
+      
+    </div>
+
+      
+    </div>   
+
+
+
+
+<!--end7-->
+                      
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="css.js"></script>
+
+</body>
+</html>
